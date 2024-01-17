@@ -3,7 +3,7 @@
 ## 9. grupa
 ### 1. kurss
 
-#Warning
+# Warning
 ***PIRMS IZMANTOT ŠO KODU MAPĒ. PĀRLIECINIETIES KA TUR NAV FAILU SAISTĪBĀ AR DATORU, OS u.c.***
 
 # Kāpēc izmantot SMF?
