@@ -3,7 +3,8 @@
 ## 9. grupa
 ### 1. kurss
 
-
+#Warning
+***PIRMS IZMANTOT ŠO KODU MAPĒ. PĀRLIECINIETIES KA TUR NAV FAILU SAISTĪBĀ AR DATORU, OS u.c.***
 
 # Kāpēc izmantot SMF?
 SMF ir noderīga, piemēram, ja jums ir kāda mape, kur ir daudz vienību, jeb ***Item***, un ir ļoti liela gribēšana to visu atsortēt.
@@ -53,4 +54,4 @@ tā lai nenotiktu viss par 2 sekundēm.
 
 ***1.*** **Interface** pašlaik nebūs diez ko ideāla, bija doma ievietot pogas nevis vajadzību rakstīt tekstu, bet pašlaik tas ir viss uz ko esmu spējīgs.
 
-***2.*** **Secība** šai programmai ir vienkāršāka par vienkāršo. No sākuma, kad viņu palaist, un ierakstīt 'Yeah', viņa sāk skenēt kur atrodas programma, t.i. kāda ir atrašanās vieta (C:\xxxx\xxxx\xxxx), un no tā seko, kad tā veica skenēšanu, un atrada lokāciju, viņa sāk skenēt kas vispār atrodas šajā mapē. Beidzoties skenēšanai, tā sāk savu darbību, sākot ar folderiem, SMF sāk nolasīt folderus, un ievietot informāciju par tiem jau nesen izveidotā listā **folders[]**. Pēc tā, kad noskenēja, un izveidoja jaunu mapi **Folders**, tā pārvieto visas iepriekš šajā mapē atrodošās mapes jaunajā mapē. Un ***identiska operācija*** notiek ar failiem. Bet arī kodā ir pierakstīts, ka paša programma paliks tur kur viņa bija, ***programma nekur netiks pārvietota***. Un tas ir viss, katram faila tipam, piemēram png, txt, xlsx, csv, jpeg u.c. būs savas mapes, un **png** mapē atradīsies visi png faili, utt.
+***2.*** **Secība** šai programmai ir vienkāršāka par vienkāršo. No sākuma, kad viņu palaist, un ierakstīt 'Yeah', viņa sāk skenēt kur atrodas programma, t.i. kāda ir atrašanās vieta (C:\xxxx\xxxx\xxxx), un no tā seko, kad tā veica skenēšanu, un atrada lokāciju, viņa sāk skenēt kas vispār atrodas šajā mapē. Beidzoties skenēšanai, tā sāk savu darbību, sākot ar folderiem, SMF sāk nolasīt folderus, un ievietot informāciju par tiem jau nesen izveidotā listā **folders[]**. Pēc tā, kad noskenēja, un izveidoja jaunu mapi **Folders**, tā pārvieto visas iepriekš šajā mapē atrodošās mapes jaunajā mapē. Un ***identiska operācija*** notiek ar failiem. Bet arī kodā ir pierakstīts, ka paša programma paliks tur kur viņa bija, ***programma nekur netiks pārvietota***. Un tas ir viss, katram faila tipam, piemēram png, txt, xlsx, csv, jpeg u.c. būs savas mapes, un **png** mapē atradīsies visi png faili, utt. 
