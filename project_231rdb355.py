@@ -12,11 +12,11 @@ def failusortings():
     user_choice = input("Please, enter excactly 'Yeah' or 'Nope'").lower() # .lower() noziime Yes parveidot par yes, dēļ case sensetive, jeb dēļ  if user_choice == 'yes':
 
     if user_choice == 'yeah':
-        time.sleep(1)
+        time.sleep(2)
         print("Starting scnanning place...")
         folderi = []
         failu_tipi = {}# izveido listu un dict lai saglabatu failu tipus un mapes
-
+        time.sleep(1)
         for item_nosaukums in faili_mape:
             item_vieta = os.path.join(scripta_loc, item_nosaukums)
 
@@ -32,9 +32,9 @@ def failusortings():
             elif os.path.isdir(item_vieta):
                 folderi.append(item_nosaukums) # un sheit jau ir tas, ja tas item nav faila tips, tas nozime ka tas ir folder, un tapec izmantojas isdir, parbauda ja tas nav fails, tad tas ir folders, un pievieno vina parametrus folders lista
 
-
-        print("Scan completed, setting up sorting. 50%...")
         time.sleep(1)
+        print("Scan completed, setting up sorting. 50%...")
+        time.sleep(2)
 
         for faila_tips, faili in failu_tipi.items(): #shis for cikls izveido katram failu tipam atsevisku folderi
             folderi_delj_tipiem = os.path.join(scripta_loc, f"{faila_tips[1:]}")# f"{faila_tips[1:*nogriezh punktu jeb pirmo elementu]}", un f ir tas pats kas format, lai formatetu apgriezto nosaukumu
@@ -48,7 +48,7 @@ def failusortings():
         mape_del_mapem = os.path.join(scripta_loc, "Folders") # un shis ir gandriz tas pats kas ieprieks tikai shis izveido atseviski delj folderiem folderi_)
         os.makedirs(mape_del_mapem, exist_ok=True) # makedirs izveido folderi, exist_ok =true ir, lai, ja ir jau Folders folderis, lai nebutu errora.
         print("Sorting almost done, files sorted and moved, folders left. 80%...")
-        
+        time.sleep(1)
         for mapes_nosauk in folderi: # lai cik tas smiekligi neubtu, vins parvieto folderi uz Folders folderi__) iet cauri katram folderi[] listam un norada, ka vins sakuma ir seit, kur vinam jabut beigas, un jau ar sutil.move notiek kustiba
             sakums = os.path.join(scripta_loc, mapes_nosauk)
             beigu_pozicija = os.path.join(mape_del_mapem, mapes_nosauk)
@@ -56,6 +56,7 @@ def failusortings():
                 continue
             shutil.move(sakums, beigu_pozicija)
         print("Sorting completed")
+        time.sleep(2)
     elif user_choice == 'nope':
         print("Why not? Okay, maybe next time buddy_)")
     else:
